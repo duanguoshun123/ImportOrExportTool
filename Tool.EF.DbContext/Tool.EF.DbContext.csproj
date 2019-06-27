@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CBA72EB-44BB-439F-A93A-A25FBCD1208F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tool.EF.DbContext</RootNamespace>
+    <AssemblyName>Tool.EF.DbContext</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HfAnalysisDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HfAnalysisRelation.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HfFlow.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HfFlowGroup.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HfFuturesOrder.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HfSpotRequest.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HfTask.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHBMS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHBMS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHBMS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHBMS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHBMS.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineTime.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineTimeFlag.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpotMortgageProcessingFlag.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpotTradeProcessingFlag.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyncContractDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyncFreightCharge.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SynchronizationErrorLog.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyncOutRecordSameTransport.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyncSpotInventory.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyncSpotMortgage.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyncSpotTrade.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyncTradeContractInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyncTradeDeliveryBatch.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyncTradePayment.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyncTradePriced.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TpProject.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TpProjectImplementation.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAccountEntity.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAccountingDataLog.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAccountingDataLogDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAccountingFee.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAccountingTask.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFActualApprovalStep.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFActualApprovalStepUser.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFActualApprovalWF.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFActualApprover.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFActualStepCondition.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFActuaStepAction.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAdditionalConfiguration.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAggregateBill.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAggregateBillDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAmountRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAmountRecordDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAmountRecordSubDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFApprovalAttachment.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFApprovalCancellationForm.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFApprovalConfiguration.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFApprovalWorkflowLog.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFApprovalWorkflowStepTemplate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFApprovalWorkflowTemplate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFApprovalWorkflowTemplateRole.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFApproverTemplate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAuthorization.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAuthorizationContent.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFAvgPriceDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFBillContentArchive.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFBillContentPrint.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFBillTemplate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFBrand.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFBusiness.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFBusinessBillTemplate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFBuyContractTradeRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCardCodeInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCargoInseparabilityConfiguration.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCargoValueCalcConf.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCarry.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCodeCustomization.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCodeTemplate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCodeTemplateDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCommercialInvoice.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCommodity.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCommodityCategory.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCommodityQuantityUnit.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCommodityType.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCommodityTypeQuantityUnit.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCompany.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCompanyBankInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCompanyBankInfoCommodityAccountEntity.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCompanyBusiness.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCompanySAPCode.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFComponentVariety.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCondition.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFConditionProperty.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContact.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContactCommodityAccountEntity.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractBillArchive.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractBillArchiveDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractBillArchiveLinker.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractComment.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractComponent.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractCustomer.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractDetailInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractDetailQuantity.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractEntryRecordDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractFee.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractFeeType.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractInvoice.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractLog.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractOutRecordDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractPricingTerm.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractSecondPart.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFContractWhole.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCorporationApprovalWFTemplate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCorporationDepartment.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCorporationTypeConfiguration.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCostPayRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCostPayRequest.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCostPrice.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCreditRating.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCreditRatingDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCurrency.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCurrencyPair.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFCustomerCommodity.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFDateVaryingPropertyConf.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFDefaultExchangeSetting.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFDeliveryContract.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFDeliveryInDetailQuantity.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFDeliveryNotification.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFDeliveryNotificationDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFDeliveryNotificationObject.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFDepartmentAccountEntity.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFDeposit.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFDepositContract.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFEntityProperty.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFEntityPropertyType.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFEntitySapPart.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFExchangeBill.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFExchangeRate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFExportTradeRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFExportWarehouseStorage.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFeeEstimate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFeeRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFinalPrice.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFinancialBatch.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFinancialBatchInventory.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFinancialBatchOutDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFirePriceConfirm.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFirePriceDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFirePricePostponeConfirm.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFirePriceRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFreightPrice.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFFutureTradeRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFGeneralModification.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFGeneralModificationDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFHedgeMatch.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFInstrument.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFInstrumentCategory.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFInstrumentSettlementPrice.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFInventoryAdjustmentRequest.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFInvoiceDetailQuantity.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFInvoiceObject.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFInvoiceRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFInvoiceRequest.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFInvoiceRequestDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFLcContract.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFLetterOfCredit.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFLoginHistory.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFLogisticsPlace.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFLongContract.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFLongContractDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFMarketCalendar.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFMarketPriceDiff.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFMoneyConversion.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFMultiPrecursorBatch.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFOfficeAddress.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFOrderInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFOtherBill.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFOurPlantTransferWarehouseNotification.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFOurPlantTransferWarehouseNotificationDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFOutRecordAssistantMeasureInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPaymentProposal.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPaymentProposalDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPaymentProposalSubDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPayRequest.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPayRequestDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPayRequestSubDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPledgeContract.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPledgeInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPledgeRenewal.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPledgeRenewalDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPost.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPostingInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPostingInfoDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPriceConfirmationLetter.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPriceConfirmationLetterDetails.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPriceDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPriceInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPriceInstrument.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPriceQuantityScale.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFPricingConfirmDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFQuantityType.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFReceivingClaim.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFRoleBusiness.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFRoleConditionConfiguration.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFRoleInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFRolePrivilege.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSafetyLink.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSaleContractTradeRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSapAmountCategoryCommodity.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSapConfiguration.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSapTransaction.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSapTransactionMultiObject.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSettlementRequest.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSettlementRequestDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSettleOption.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSettleOptionDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSettleOptionDetailExchangeProcess.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSettleOptionDetailPaymentForm.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSodEpAmountFirst.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSodEpConditionalRelease.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSodEpDocumentsAgainstAcceptance.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSodEpDocumentsAgainstPayment.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSodEpLetterOfCredit.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSodPfExchangeBill.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSpecialFeeConfiguration.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSpecification.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSpotReceiptConvertDetailInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSpotReceiptConvertInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFStepActionTemplate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFStepConditionTemplate.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFStorageAssistantMeasureInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFStorageConversion.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFStorageConversionDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSubscribeConfig.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSubscribeConfigDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSupplementalAgreement.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSupplementalAgreementDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSystemCodeInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSystemCodeInfoConfiguration.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSystemConfigDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSystemConfiguration.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSystemFee.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSystemFeeConfiguration.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSystemFinanceAccount.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFSystemLog.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFTempData.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFTradeAccount.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFTradeInstruction.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFTradeInstructionDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFTradeInstructionRelation.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFTradePricing.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFTradePricingMatchDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFTradePricingMatchRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFTradingStrategy.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUnit.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUnitConversion.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUnPledgeInfo.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUser.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUserBusiness.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUserCorporation.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUserLinker.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUserMessage.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUserPublishInformation.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUserRequest.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUserRole.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFUserTask.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFVehicleTransportSpec.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseCalculateFeeType.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseCardCodePrefix.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseCompany.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseEntryRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseEntryRecordDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseOutOrder.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseOutRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseOutRecordDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseShiftingRecord.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseStorage.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseStorageHistory.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehouseStorageItem.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehousing.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWarehousingDetail.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WFWhStorageFlowTrack.cs">
+      <DependentUpon>ModelHBMS.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="ModelHBMS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelHBMS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelHBMS.edmx.diagram">
+      <DependentUpon>ModelHBMS.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelHBMS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelHBMS.Context.cs</LastGenOutput>
+      <DependentUpon>ModelHBMS.edmx</DependentUpon>
+    </Content>
+    <Content Include="ModelHBMS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelHBMS.cs</LastGenOutput>
+      <DependentUpon>ModelHBMS.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D864FB1B-E71B-4A16-9AE2-5C1E499218CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tool.DbModel.DTO</RootNamespace>
+    <AssemblyName>Tool.DbModel.DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigModel\ImportMappingModel.cs" />
+    <Compile Include="ConfigModel\MappingContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WFAccountEntity_Dto.cs" />
+    <Compile Include="WFAdditionalConfiguration_Dto.cs" />
+    <Compile Include="WFBusiness_Dto.cs" />
+    <Compile Include="WFCommodityCategory_Dto.cs" />
+    <Compile Include="WFCommodityTypeQuantityUnit_Dto.cs" />
+    <Compile Include="WFCommodityType_Dto.cs" />
+    <Compile Include="WFCommodity_Dto.cs" />
+    <Compile Include="WFCompany_Dto.cs" />
+    <Compile Include="WFCorporationDepartment_Dto.cs" />
+    <Compile Include="WFCorporationTypeConfiguration_Dto.cs" />
+    <Compile Include="WFCurrency_Dto.cs" />
+    <Compile Include="WFDepartmentAccountEntity_Dto.cs" />
+    <Compile Include="WFInstrumentCategory_Dto.cs" />
+    <Compile Include="WFInstrument_Dto.cs" />
+    <Compile Include="WFOfficeAddress_Dto.cs" />
+    <Compile Include="WFPost_Dto.cs" />
+    <Compile Include="WFRoleBusiness_Dto.cs" />
+    <Compile Include="WFRoleInfo_Dto.cs" />
+    <Compile Include="WFRolePrivilege_Dto.cs" />
+    <Compile Include="WFUnit_Dto.cs" />
+    <Compile Include="WFUserRole_Dto.cs" />
+    <Compile Include="WFUser_Dto.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tool.DbModel.Model\Tool.DbModel.Model.csproj">
+      <Project>{A7A58F19-852D-4937-A50F-18799DD93DE0}</Project>
+      <Name>Tool.DbModel.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

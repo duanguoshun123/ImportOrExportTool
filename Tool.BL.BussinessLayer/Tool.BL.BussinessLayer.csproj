@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{448C2793-753D-4D3A-A3BB-273923FCED37}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tool.BL.BussinessLayer</RootNamespace>
+    <AssemblyName>Tool.BL.BussinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tool.BL.BussinessLayer.Interface\IImportManager.cs" />
+    <Compile Include="Tool.BL.BussinessLayer.Manager\ImportManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tool.BL.AOP\Tool.BL.AOP.csproj">
+      <Project>{E672B1C0-D5C6-4DC3-AAD5-B0E2B9225E8C}</Project>
+      <Name>Tool.BL.AOP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tool.Common.CommonHelper\Tool.Common.CommonHelper.csproj">
+      <Project>{B0753F1B-B172-4CBE-9189-3BD682B422E5}</Project>
+      <Name>Tool.Common.CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tool.DAL.DataAccessLayer\Tool.DAL.DataAccessLayer.csproj">
+      <Project>{709A7D3C-1F22-4C6B-9EC7-22C68E2D7879}</Project>
+      <Name>Tool.DAL.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tool.DbModel.DTO\Tool.DbModel.DTO.csproj">
+      <Project>{D864FB1B-E71B-4A16-9AE2-5C1E499218CB}</Project>
+      <Name>Tool.DbModel.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

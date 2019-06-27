@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7a324382084b4faa8c5bfacf2df225b5" Name="Diagram1">
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.HfAnalysisDetail" Width="1.5" PointX="12.75" PointY="86.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.HfAnalysisRelation" Width="1.5" PointX="15" PointY="87.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.HfFlow" Width="1.5" PointX="10.5" PointY="84.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.HfFlowGroup" Width="1.5" PointX="8.25" PointY="76" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.HfFuturesOrder" Width="1.5" PointX="8.25" PointY="83.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.HfSpotRequest" Width="1.5" PointX="8.25" PointY="109.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.HfTask" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.OnlineTime" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.OnlineTimeFlag" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SpotTradeProcessingFlag" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SyncContractDetail" Width="1.5" PointX="10.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SyncFreightCharge" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SynchronizationErrorLog" Width="1.5" PointX="15.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SyncOutRecordSameTransport" Width="1.5" PointX="17.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SyncSpotInventory" Width="1.5" PointX="17.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SyncSpotMortgage" Width="1.5" PointX="17.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SyncSpotTrade" Width="1.5" PointX="0.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SyncTradeContractInfo" Width="1.5" PointX="0.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SyncTradeDeliveryBatch" Width="1.5" PointX="19.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SyncTradePayment" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SyncTradePriced" Width="1.5" PointX="15.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.TpProject" Width="1.5" PointX="10.75" PointY="34" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.TpProjectImplementation" Width="1.5" PointX="13" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAccountEntity" Width="1.5" PointX="3.75" PointY="29.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAccountingDataLog" Width="1.5" PointX="32.75" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAccountingDataLogDetail" Width="1.5" PointX="35" PointY="33.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAccountingFee" Width="1.5" PointX="34.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAccountingTask" Width="1.5" PointX="17.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFActualApprovalStep" Width="1.5" PointX="13" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFActualApprovalStepUser" Width="1.5" PointX="15.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFActualApprovalWF" Width="1.5" PointX="10.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFActualApprover" Width="1.5" PointX="10.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFActualStepCondition" Width="1.5" PointX="15.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFActuaStepAction" Width="1.5" PointX="18.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAdditionalConfiguration" Width="1.5" PointX="22.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAggregateBill" Width="1.5" PointX="32.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAggregateBillDetail" Width="1.5" PointX="35" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAmountRecord" Width="1.5" PointX="17.25" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAmountRecordDetail" Width="1.5" PointX="19.5" PointY="101.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAmountRecordSubDetail" Width="1.5" PointX="21.75" PointY="89.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFApprovalAttachment" Width="1.5" PointX="13" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFApprovalCancellationForm" Width="1.5" PointX="2.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFApprovalConfiguration" Width="1.5" PointX="11" PointY="125.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFApprovalWorkflowLog" Width="1.5" PointX="15.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFApprovalWorkflowStepTemplate" Width="1.5" PointX="23" PointY="64.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFApprovalWorkflowTemplate" Width="1.5" PointX="8.75" PointY="122.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFApprovalWorkflowTemplateRole" Width="1.5" PointX="26" PointY="64.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFApproverTemplate" Width="1.5" PointX="20.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAuthorization" Width="1.5" PointX="32.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAuthorizationContent" Width="1.5" PointX="35" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFAvgPriceDetail" Width="1.5" PointX="10.5" PointY="135.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFBillContentArchive" Width="1.5" PointX="19" PointY="180.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFBillContentPrint" Width="1.5" PointX="21.25" PointY="181.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFBillTemplate" Width="1.5" PointX="16.75" PointY="180.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFBrand" Width="1.5" PointX="6" PointY="123.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFBusiness" Width="1.5" PointX="6" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFBusinessBillTemplate" Width="1.5" PointX="19" PointY="125.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFBuyContractTradeRecord" Width="1.5" PointX="13.5" PointY="123.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCardCodeInfo" Width="1.5" PointX="29.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCargoInseparabilityConfiguration" Width="1.5" PointX="28.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCargoValueCalcConf" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCarry" Width="1.5" PointX="35.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCodeCustomization" Width="1.5" PointX="27.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCodeTemplate" Width="1.5" PointX="22.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCodeTemplateDetail" Width="1.5" PointX="25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCommercialInvoice" Width="1.5" PointX="16.5" PointY="94.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCommodity" Width="1.5" PointX="3.75" PointY="114.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCommodityCategory" Width="1.5" PointX="1.5" PointY="83.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCommodityQuantityUnit" Width="1.5" PointX="3" PointY="96.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCommodityType" Width="1.5" PointX="3.75" PointY="82.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCommodityTypeQuantityUnit" Width="1.5" PointX="6" PointY="96.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCompany" Width="1.5" PointX="3.75" PointY="102" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCompanyBankInfo" Width="1.5" PointX="6" PointY="85.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCompanyBankInfoCommodityAccountEntity" Width="1.5" PointX="8.25" PointY="58.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCompanyBusiness" Width="1.5" PointX="8.25" PointY="70.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCompanySAPCode" Width="1.5" PointX="6" PointY="107.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFComponentVariety" Width="1.5" PointX="0.75" PointY="91.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCondition" Width="1.5" PointX="8.75" PointY="125.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFConditionProperty" Width="1.5" PointX="36.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContact" Width="1.5" PointX="6" PointY="109.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContactCommodityAccountEntity" Width="1.5" PointX="8.25" PointY="66.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractBillArchive" Width="1.5" PointX="17.25" PointY="62.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractBillArchiveDetail" Width="1.5" PointX="19.5" PointY="63.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractBillArchiveLinker" Width="1.5" PointX="19.5" PointY="98.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractComment" Width="1.5" PointX="16.5" PointY="101.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractComponent" Width="1.5" PointX="16.5" PointY="104.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractCustomer" Width="1.5" PointX="16.5" PointY="108.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractDetailInfo" Width="1.5" PointX="11.25" PointY="101.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractDetailQuantity" Width="1.5" PointX="13.5" PointY="115.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractEntryRecordDetail" Width="1.5" PointX="19.5" PointY="109.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractFee" Width="1.5" PointX="22.5" PointY="99.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractFeeType" Width="1.5" PointX="2.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractInfo" Width="1.5" PointX="14.25" PointY="93" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractInvoice" Width="1.5" PointX="16.5" PointY="113.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractLog" Width="1.5" PointX="16.5" PointY="119.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractOutRecordDetail" Width="1.5" PointX="25.5" PointY="101.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractPricingTerm" Width="1.5" PointX="8.25" PointY="103.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractSecondPart" Width="1.5" PointX="16.5" PointY="123" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFContractWhole" Width="1.5" PointX="12" PointY="108.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCorporationApprovalWFTemplate" Width="1.5" PointX="11" PointY="113.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCorporationDepartment" Width="1.5" PointX="6" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCorporationTypeConfiguration" Width="1.5" PointX="6" PointY="115.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCostPayRecord" Width="1.5" PointX="35" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCostPayRequest" Width="1.5" PointX="32.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCostPrice" Width="1.5" PointX="30" PointY="123" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCreditRating" Width="1.5" PointX="1.5" PointY="105.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCreditRatingDetail" Width="1.5" PointX="6" PointY="119.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCurrency" Width="1.5" PointX="3.75" PointY="90.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCurrencyPair" Width="1.5" PointX="12" PointY="65.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFCustomerCommodity" Width="1.5" PointX="9" PointY="118.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFDateVaryingPropertyConf" Width="1.5" PointX="34.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFDefaultExchangeSetting" Width="1.5" PointX="14.25" PointY="69.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFDeliveryContract" Width="1.5" PointX="12" PointY="77.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFDeliveryInDetailQuantity" Width="1.5" PointX="21" PointY="47.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFDeliveryNotification" Width="1.5" PointX="18.75" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFDeliveryNotificationDetail" Width="1.5" PointX="21" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFDeliveryNotificationObject" Width="1.5" PointX="23.25" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFDepartmentAccountEntity" Width="1.5" PointX="6" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFDeposit" Width="1.5" PointX="32.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFDepositContract" Width="1.5" PointX="35" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFEntityProperty" Width="1.5" PointX="16" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFEntityPropertyType" Width="1.5" PointX="13.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFEntitySapPart" Width="1.5" PointX="15" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFExchangeBill" Width="1.5" PointX="15" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFExchangeRate" Width="1.5" PointX="14.25" PointY="65.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFExportTradeRecord" Width="1.5" PointX="4.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFExportWarehouseStorage" Width="1.5" PointX="34.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFeeEstimate" Width="1.5" PointX="36.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFeeRecord" Width="1.5" PointX="20.25" PointY="157.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFinalPrice" Width="1.5" PointX="10.5" PointY="139.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFinancialBatch" Width="1.5" PointX="25.5" PointY="112.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFinancialBatchInventory" Width="1.5" PointX="27.75" PointY="76.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFinancialBatchOutDetail" Width="1.5" PointX="27.75" PointY="102.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFirePriceConfirm" Width="1.5" PointX="10.5" PointY="143.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFirePriceDetail" Width="1.5" PointX="10.5" PointY="147.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFirePricePostponeConfirm" Width="1.5" PointX="10.5" PointY="151.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFirePriceRecord" Width="1.5" PointX="12.75" PointY="142.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFreightPrice" Width="1.5" PointX="37.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFFutureTradeRecord" Width="1.5" PointX="8.25" PointY="95.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFGeneralModification" Width="1.5" PointX="30.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFGeneralModificationDetail" Width="1.5" PointX="33" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFHedgeMatch" Width="1.5" PointX="37.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFInstrument" Width="1.5" PointX="11.25" PointY="94.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFInstrumentCategory" Width="1.5" PointX="6" PointY="90.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFInstrumentSettlementPrice" Width="1.5" PointX="13.5" PointY="81.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFInventoryAdjustmentRequest" Width="1.5" PointX="37.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFInvoiceDetailQuantity" Width="1.5" PointX="18.75" PointY="116.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFInvoiceObject" Width="1.5" PointX="27" PointY="96.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFInvoiceRecord" Width="1.5" PointX="18.75" PointY="82.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFInvoiceRequest" Width="1.5" PointX="16.5" PointY="66.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFInvoiceRequestDetail" Width="1.5" PointX="22.5" PointY="113.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFLcContract" Width="1.5" PointX="19.5" PointY="106.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFLetterOfCredit" Width="1.5" PointX="12.75" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFLoginHistory" Width="1.5" PointX="37.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFLogisticsPlace" Width="1.5" PointX="37.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFLongContract" Width="1.5" PointX="12" PointY="129.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFLongContractDetail" Width="1.5" PointX="12" PointY="73.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFMarketCalendar" Width="1.5" PointX="37.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFMarketPriceDiff" Width="1.5" PointX="37.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFMoneyConversion" Width="1.5" PointX="12.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFMultiPrecursorBatch" Width="1.5" PointX="27.75" PointY="115.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFOfficeAddress" Width="1.5" PointX="0.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFOrderInfo" Width="1.5" PointX="16.5" PointY="127.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFOtherBill" Width="1.5" PointX="28.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFOurPlantTransferWarehouseNotification" Width="1.5" PointX="28" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFOurPlantTransferWarehouseNotificationDetail" Width="1.5" PointX="30.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFOutRecordAssistantMeasureInfo" Width="1.5" PointX="25.5" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPaymentProposal" Width="1.5" PointX="20.25" PointY="74.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPaymentProposalDetail" Width="1.5" PointX="22.5" PointY="94.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPaymentProposalSubDetail" Width="1.5" PointX="24.75" PointY="94.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPayRequest" Width="1.5" PointX="18" PointY="73" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPayRequestDetail" Width="1.5" PointX="22.5" PointY="108.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPayRequestSubDetail" Width="1.5" PointX="24.75" PointY="108.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPledgeContract" Width="1.5" PointX="16.5" PointY="142" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPledgeInfo" Width="1.5" PointX="27.75" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPledgeRenewal" Width="1.5" PointX="18.75" PointY="141.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPledgeRenewalDetail" Width="1.5" PointX="21" PointY="141.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPost" Width="1.5" PointX="3.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPostingInfo" Width="1.5" PointX="25.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPostingInfoDetail" Width="1.5" PointX="28" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPriceConfirmationLetter" Width="1.5" PointX="16.5" PointY="146" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPriceConfirmationLetterDetails" Width="1.5" PointX="18.75" PointY="146.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPriceDetail" Width="1.5" PointX="8.25" PointY="142.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPriceInfo" Width="1.5" PointX="6" PointY="101.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPriceInstrument" Width="1.5" PointX="13.5" PointY="120.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPriceQuantityScale" Width="1.5" PointX="37.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFPricingConfirmDetail" Width="1.5" PointX="17.25" PointY="135.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFQuantityType" Width="1.5" PointX="1.5" PointY="115.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFReceivingClaim" Width="1.5" PointX="15" PointY="54.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFRoleBusiness" Width="1.5" PointX="8.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFRoleConditionConfiguration" Width="1.5" PointX="23" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFRoleInfo" Width="1.5" PointX="6" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFRolePrivilege" Width="1.5" PointX="8.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSafetyLink" Width="1.5" PointX="38.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSaleContractTradeRecord" Width="1.5" PointX="27.75" PointY="120.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSapAmountCategoryCommodity" Width="1.5" PointX="11" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSapConfiguration" Width="1.5" PointX="8.75" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSapTransaction" Width="1.5" PointX="12.75" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSapTransactionMultiObject" Width="1.5" PointX="15" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSettlementRequest" Width="1.5" PointX="15.75" PointY="74.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSettlementRequestDetail" Width="1.5" PointX="19.5" PointY="95" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSettleOption" Width="1.5" PointX="12" PointY="69.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSettleOptionDetail" Width="1.5" PointX="14.25" PointY="170.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSettleOptionDetailExchangeProcess" Width="1.5" PointX="16.5" PointY="169" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSettleOptionDetailPaymentForm" Width="1.5" PointX="16.5" PointY="177.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSodEpAmountFirst" Width="1.5" PointX="18.75" PointY="164.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSodEpConditionalRelease" Width="1.5" PointX="18.75" PointY="166.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSodEpDocumentsAgainstAcceptance" Width="1.5" PointX="18.75" PointY="168.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSodEpDocumentsAgainstPayment" Width="1.5" PointX="18.75" PointY="171.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSodEpLetterOfCredit" Width="1.5" PointX="18.75" PointY="174.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSodPfExchangeBill" Width="1.5" PointX="18.75" PointY="177.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSpecialFeeConfiguration" Width="1.5" PointX="10.5" PointY="156.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSpecification" Width="1.5" PointX="6" PointY="126.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSpotReceiptConvertDetailInfo" Width="1.5" PointX="23.25" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSpotReceiptConvertInfo" Width="1.5" PointX="21" PointY="51.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFStepActionTemplate" Width="1.5" PointX="26.25" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFStepConditionTemplate" Width="1.5" PointX="27.25" PointY="92.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFStorageAssistantMeasureInfo" Width="1.5" PointX="23.25" PointY="44.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFStorageConversion" Width="1.5" PointX="25.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFStorageConversionDetail" Width="1.5" PointX="28" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSubscribeConfig" Width="1.5" PointX="8.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSubscribeConfigDetail" Width="1.5" PointX="11" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSupplementalAgreement" Width="1.5" PointX="16.5" PointY="154.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSupplementalAgreementDetail" Width="1.5" PointX="18.75" PointY="154.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSystemCodeInfo" Width="1.5" PointX="25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSystemCodeInfoConfiguration" Width="1.5" PointX="27.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSystemConfigDetail" Width="1.5" PointX="32" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSystemConfiguration" Width="1.5" PointX="29.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSystemFee" Width="1.5" PointX="18" PointY="158.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSystemFeeConfiguration" Width="1.5" PointX="8.25" PointY="156.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSystemFinanceAccount" Width="1.5" PointX="15.75" PointY="159.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFSystemLog" Width="1.5" PointX="30.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFTempData" Width="1.5" PointX="38.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFTradeAccount" Width="1.5" PointX="38.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFTradeInstruction" Width="1.5" PointX="7.75" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFTradeInstructionDetail" Width="1.5" PointX="10" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFTradeInstructionRelation" Width="1.5" PointX="10" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFTradePricing" Width="1.5" PointX="15" PointY="133.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFTradePricingMatchDetail" Width="1.5" PointX="30" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFTradePricingMatchRecord" Width="1.5" PointX="27.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFTradingStrategy" Width="1.5" PointX="2.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUnit" Width="1.5" PointX="0.75" PointY="96.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUnitConversion" Width="1.5" PointX="39.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUnPledgeInfo" Width="1.5" PointX="30" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUser" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUserBusiness" Width="1.5" PointX="8.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUserCorporation" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUserLinker" Width="1.5" PointX="4.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUserMessage" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUserPublishInformation" Width="1.5" PointX="39.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUserRequest" Width="1.5" PointX="5.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUserRole" Width="1.5" PointX="8.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFUserTask" Width="1.5" PointX="5.25" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFVehicleTransportSpec" Width="1.5" PointX="6.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseCalculateFeeType" Width="1.5" PointX="8.25" PointY="160.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseCardCodePrefix" Width="1.5" PointX="8.25" PointY="163.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseCompany" Width="1.5" PointX="6" PointY="159.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseDetail" Width="1.5" PointX="8.25" PointY="166.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseEntryRecord" Width="1.5" PointX="16.5" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseEntryRecordDetail" Width="1.5" PointX="18.75" PointY="39.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseOutOrder" Width="1.5" PointX="23.25" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseOutRecord" Width="1.5" PointX="21" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseOutRecordDetail" Width="1.5" PointX="23.25" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseShiftingRecord" Width="1.5" PointX="34.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseStorage" Width="1.5" PointX="21" PointY="36.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseStorageHistory" Width="1.5" PointX="6" PointY="130.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehouseStorageItem" Width="1.5" PointX="23.25" PointY="48.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehousing" Width="1.5" PointX="25.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWarehousingDetail" Width="1.5" PointX="28" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.WFWhStorageFlowTrack" Width="1.5" PointX="25.5" PointY="39.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OperationSystem_HBMSModel.SpotMortgageProcessingFlag" Width="1.5" PointX="8.75" PointY="39.75" IsExpanded="true" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfAnalysisDetail_REFERENCE_HfAnalysisDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfAnalysisDetail_REFERENCE_HfFlow" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfAnalysisRelation_HfAnalysisDetailId_REFERENCE_HfAnalysisDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfAnalysisRelation_LastDescendantId_REFERENCE_HfAnalysisDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfFlow_BuyFuturesRecordId_REFERENCE_HfFuturesOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfFlow_BuySpotRequestId_REFERENCE_HfSpotRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfFlow_Hedge_FuturesId_REFERENCE_HfFuturesOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfFlow_Hedge_SpotId_REFERENCE_HfSpotRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfFlow_REFERENCE_HfFlowGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfFlow_SellFuturesRecordId_REFERENCE_HfFuturesOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfFlow_SellSpotRequestId_REFERENCE_HfSpotRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_HfFuturesOrder_REFERENCE_WFInstrumentCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_TpProjectImplementation_REFERENCE_TpProject" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCOMMODITYACCOUNTENTITY_REFERENCE_150_WFACCOUNTENTITY" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCORPORATIONDEPARTMENT_REFERENCE_170_WFACCOUNTENTITY" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFDEPARTMENTACCOUNTENTITY_REFERENCE_152_WFACCOUNTENTITY" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFDEPARTMENTACCOUNTENTITY_REFERENCE_153_WFACCOUNTENTITY" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFACCOUNTINGDATALOGDETAIL_REFERENCE_87_WFACCOUNTINGDATALOG" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFACTUALAPPROVALSTEP_REFERENCE_127_WFACTUALAPPROVALWF" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFACTUALAPPROVALSTEP_REFERENCE_141_WFACTUALAPPROVER" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFACTUALAPPROVALSTEPUSER_REFERENCE_134_WFACTUALAPPROVALSTEP" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFACTUALSTEPCONDITION_REFERENCE_128_WFACTUALAPPROVALSTEP" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFACTUALSTEPCONDITION_REFERENCE_129_WFACTUALAPPROVALSTEP" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFACTUASTEPACTION_REFERENCE_139_WFACTUALAPPROVALSTEP" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAPPROVALWORKFLOWLOG_REFERENCE_130_WFACTUALAPPROVALSTEP" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAPPROVALATTACHMENT_REFERENCE_126_WFACTUALAPPROVALWF" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFACTUASTEPACTION_REFERENCE_140_WFACTUALAPPROVER" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAggregateBillDetail_REFERENCE_WFAggregateBill" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAMOUNT_REFERENCE_WFRECEIVINGCLAIM" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAmountRecord_REFERENCE_WFExchangeBill" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAmountRecord_REFERENCE_WFPaymentProposal" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFAmountRecord_WFAmountRecordDetail_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFPayRequest_WFAmountRecord_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAmountRecordSubDetail_REFERENCE_WFAmountRecordDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFContractInfo_WFAmountRecordDetail_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFApprovalConfiguration_REFERENCE_WFCondition" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAPPROVALWORKFLOWSTEPTEMPLA_REFERENCE_121_WFAPPROVALWORKFLOWTEMPLATE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAPPROVALWORKFLOWSTEPTEMPLA_REFERENCE_138_WFAPPROVERTEMPLATE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSTEPACTIONTEMPLATE_REFERENCE_133_WFAPPROVALWORKFLOWSTEPTEMPLA" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSTEPCONDITIONTEMPLATE_REFERENCE_117_WFAPPROVALWORKFLOWSTEPTEMPLA" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSTEPCONDITIONTEMPLATE_REFERENCE_118_WFAPPROVALWORKFLOWSTEPTEMPLA" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAPPROVALUSER_REFERENCE_151_WFAPPROVALWORKFLOWTEMPLATE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCORPORATIONAPPROVALWFTEMPL_REFERENCE_131_WFAPPROVALWORKFLOWTEMPLATE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAPPROVALUSER_REFERENCE_135_WFAPPROVERTEMPLATE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFRoleConditionConfiguration_REFERENCE_WFApproverTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSTEPACTIONTEMPLATE_REFERENCE_137_WFAPPROVERTEMPLATE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAUTHORIZATIONCONTENT_REFERENCE_154_WFAUTHORIZATION" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFAVGPRI_REFERENCE_WFPRICED" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFBILLCO_REFERENCE_WFBILLTE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFBillContentPrint_REFERENCE_WFBillContentArchive" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFBusinessBillTemplate_REFERENCE_WFBillTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFCommodity_WFBrand_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFBUSINE_REFERENCE_WFCOMPAN" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCBCD_WFCommodityAccountEn" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCOMMODITYACCOUNTENTITY_REFERENCE_149_WFCOMMODITY" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCOMPAN_REFERENCE_WFBUSINE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTAC_REFERENCE_WFCOMMOD" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFRoleBusiness_REFERENCE_WFBusiness" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFUSERBU_REFERENCE_WFBUSINE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFBusinessBillTemplate_REFERENCE_WFCondition" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFBUYCONTRACTTRADERECORD_REFERENCE_58_WFCONTRACTENTRYRECORDDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFBUYCONTRACTTRADERECORD_REFERENCE_68_WFCONTRACTDETAILINFO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFBuyContractTradeRecord_REFERENCE_WFFinalPrice" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCOSTPRICE_REFERENCE_57_WFBUYCONTRACTTRADERECORD" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCodeCustomization_REFERENCE_WFCodeTemplateDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCodeTemplateDetail_REFERENCE_WFCodeTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSystemCodeInfo_REFERENCE_WFCodeTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommercialInvoice_REFERENCE_WFContractInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommercialInvoice_REFERENCE_WFExchangeRate" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommercialInvoice_REFERENCE_WFInvoiceRecord" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInvoiceRecord_REFERENCE_WFCommercialInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.K_WFCommercialInvoice_REFERENCE_WFCommercialInvoice_Final" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCOMMODITY_REFERENCE_66_WFCOMMODITYTYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommodity_REFERENCE_WFQuantityType" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommodityQuantityUnit_REFERENCE_WFCommodity" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFComponentVariety_REFERENCE_WFCommodity" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCREDIT_REFERENCE_WFCOMMOD" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCUSTOMERCOMMODITY_REFERENCE_104_WFCOMMODITY" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPriceInfo_REFERENCE_WFCommodity" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWarehouseStorageHistory_REFERENCE_WFCOMMODITY" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFCommodity_WFSpecification_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommodityType_REFERENCE_WFCommodityCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommodityQuantityUnit_REFERENCE_WFComponentVariety" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommodityQuantityUnit_REFERENCE_WFQuantityType" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommodityQuantityUnit_REFERENCE_WFUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommodityTypeQuantityUnit_REFERENCE_WFCommodityType" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFINSTRUMENT_REFERENCE_79_WFCOMMODITYTYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInstrumentCategory_REFERENCE_WFCommodityType" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommodityTypeQuantityUnit_REFERENCE_WFQuantityType" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCommodityTypeQuantityUnit_REFERENCE_WFUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCB_REFERENCE_WFCOMPAN" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCOMPAN_REFERENCE_WFCOMPAN" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCOMPANY_REFERENCE_159_WFCREDITRATING" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCOMPANY_REFERENCE_166_WFCREDITRATING" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCompanySAPCode_REFERENCE_WFCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTAC_REFERENCE_WFCOMPAN" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCORPORATIONAPPROVALWFTEMPL_REFERENCE_122_WFCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCorporationTypeConfiguration_REFERENCE_WFCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCUSTOMERCOMMODITY_REFERENCE_103_WFCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInstrument_REFERENCE_WFCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInstrumentCategory_REFERENCE_WFCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWAREHO_REFERENCE_WFCOMPAN" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFCompany_WFCompanyBankInfo_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCBCD_WFCompanyBankInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCorporationApprovalWFTemplate_REFERENCE_WFCondition" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFStepConditionTemplate_REFERENCE_WFCondition" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTAC_REFERENCE_WFCONTAC" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTBILLARCHIVEDETAIL_REFERENCE_84_WFCONTRACTBILLARCHIVE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTBILLARCHIVELINKER_REFERENCE_105_WFCONTRACTBILLARCHIVE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTBILLARCHIVELINKER_REFERENCE_106_WFCONTRACTINFO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFContractInfo_WFContractComment_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFContractComponent_REFERENCE_WFContractInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFContractInfo_WFContractCustomer_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFContractDetailQuantity_REFERENCE_WFContractDetailInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTENTRYRECORDDETAIL_REFERENCE_70_WFCONTRACTDETAILINFO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTOUTRECORDDETAIL_REFERENCE_71_WFCONTRACTDETAILINFO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRD_REFERENCE_WFPRICEI" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFContractInfo_WFContractDetailInfo_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFContractInfo_WFContractInvoice_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFContractInfo_WFInvoiceRequestDetail_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTENTRYRECORDDETAIL_FK_WFCONTRACTENTRYR_WFWAREHOUSEENTRYRECORDDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRA_REFERENCE_WFCONTRA" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRA_REFERENCE_WFFEEREC" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRA_REFERENCE_WFSYSTEM" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRA_REFERENCE_WFCONTRACTWHOLE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRA_REFERENCE_WFPRICEI" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACT2NDPART_WFCONTRAC" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTINFO_REFERENCE_78_WFLONGCONTRACT" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTINFO_REFERENCE_80_WFDELIVERYCONTRACT" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTINFO_REFERENCE_86_WFLONGCONTRACTDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFContractInfo_REFERENCE_WFSettleOption" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTLOG_REFERENCE_74_WFCONTRACTINFO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFLCCONT_REFERENCE_WFCONTRA" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPaymentProposalDetail_REFERENCE_WFContractInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPLEDGECONTRACT_REFERENCE_198_WFCONTRACTINFO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPRICECONFIRMATIONLETTER_REFERENCE_64_WFCONTRACTINFO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSupplementalAgreement_REFERENCE_WFContractInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFContractInfo_WFOrderInfo_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFContractInfo_WFPayRequestDetail_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFContractInfo_WFSettlementRequestDetail_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInvoiceDetailQuantity_REFERENCE_WFContractInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInvoiceObject_REFERENCE_WFContractInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFInvoiceRecord_WFContractInvoice_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCONTRACTOUTRECORDDETAIL_REFERENCE_72_WFWAREHOUSEOUTRECORDDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFinancialBatchOutDetail_REFERENCE_WFContractOutRecordDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSALECONTRACTTRADERECORD_REFERENCE_61_WFCONTRACTOUTRECORDDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFContractPricingTerm_REFERENCE_WFPriceInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCOSTPAYRECORD_REFERENCE_107_WFCOSTPAYREQUEST" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCOSTPRICE_REFERENCE_62_WFSALECONTRACTTRADERECORD" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCREDIT_REFERENCE_WFCREDIT" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCUSTOMERCOMMODITY_REFERENCE_158_WFCREDITRATING" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFCUSTOMERCOMMODITY_REFERENCE_167_WFCREDITRATING" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInstrumentCategory_REFERENCE_WFCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPriceInfo_REFERENCE_WFCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFDefaultExchangeSetting_REFERENCE_WFCurrencyPair" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFExchangeRate_REFERENCE_WFCurrencyPair" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFDeliveryInDetailQuantity_REFERENCE_WFWarehouseEntryRecordDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFDeliveryNotificationDetail_REFERENCE_WFDeliveryNotification" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWarehouseEntryRecord_REFERENCE_WFDeliveryNotification" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWarehouseOutRecord_REFERENCE_WFDeliveryNotification" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFDeliveryNotificationObject_REFERENCE_WFDeliveryNotificationDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFDepositContract_REFERENCE_WFDeposit" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFEntityProperty_REFERENCE_WFEntityPropertyType" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFEntitySapPart_REFERENCE_WFSapTransaction" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFExchangeBill_REFERENCE_WFLetterOfCredit" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFEERECORD_REFERENCE_115_WFSYSTEMFEE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFinalPrice_REFERENCE_WFPriceDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSaleContractTradeRecord_REFERENCE_WFFinalPrice" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFinancialBatch_REFERENCE_WFFinancialBatch" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFinancialBatchInventory_REFERENCE_WFFinancialBatch" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFinancialBatchOutDetail_REFERENCE_WFFinancialBatch" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFMultiPrecursorBatch_PrecursorBatchId_REFERENCE_WFFinancialBatch" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFMultiPrecursorBatch_SuccessorBatchId_REFERENCE_WFFinancialBatch" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPostingInfoDetail_REFERENCE_WFFinancialBatch" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFinancialBatchInventory_REFERENCE_WFWarehouseStorage" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFinancialBatchOutDetail_REFERENCE_WFWarehouseOutRecordDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFPC_REFERENCE_WFPRICED" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFFirePriceConfirm_WFFirePriceRecord_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFIREPR_REFERENCE_WFPRICED" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFPPC_REFERENCE_WFPRICED" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFPR_REFERENCE_WFPRICED" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFTradePricing_REFERENCE_WFFirePriceRecord" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFFutureTradeRecord_REFERENCE_WFInstrumentCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFGENERA_REFERENCE_WFGENERA" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInstrument_REFERENCE_WFInstrumentCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInstrumentSettlementPrice_REFERENCE_WFInstrument" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPRICEI_REFERENCE_WFINSTRU" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInstrumentCategory_REFERENCE_WFUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInvoiceObject_REFERENCE_WFInvoiceRecord" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFInvoiceRecord_REFERENCE_WFInvoiceRecord" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFInvoiceRequest_WFInvoiceRecord_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFInvoiceRequest_WFInvoiceRequestDetail_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFLCCONT_REFERENCE_WFLETTER" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFLONGCONTRACTDETAIL_REFERENCE_83_WFLONGCONTRACT" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFUSER_REFERENCE_208_WFOFFICEADDRESS" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFOurPlantTransferWarehouseNotification_REFERENCE_WFStorageConversion" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFOurPlantTransferWarehouseNotificationDetail_REFERENCE_WFOurPlantTransferWarehouseNotification" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFOUTRECORDASSISTANTMEASUREI_REFERENCE_207_WFWAREHOUSEOUTRECORDDETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPaymentProposal_REFERENCE_WFPayRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPaymentProposalDetail_REFERENCE_WFPaymentProposal" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPaymentProposalSubDetail_REFERENCE_WFPaymentProposalDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPAYREQUEST_REFERENCE_99_WFSETTLEMENTREQUEST" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFPayRequest_WFPayRequestDetail_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPayRequestSubDetail_REFERENCE_WFPayRequestDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPledgeRenewal_REFERENCE_WFPledgeContract" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFPledgeInfo_WFUnPledgeInfo_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPledgeRenewalDetail_REFERENCE_WFPledgeRenewal" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFROLEINFO_REFERENCE_136_WFPOST" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPostingInfoDetail_REFERENCE_WFPostingInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPRICECONFIRMATIONLETTERDET_REFERENCE_63_WFPRICECONFIRMATIONLETTER" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPI_REFERENCE_WFPRICED" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPRICED_REFERENCE_WFPRICEI" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPriceInfo_REFERENCE_WFUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFPricingConfirmDetail_REFERENCE_WFTradePricing" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFRoleBusiness_REFERENCE_WFRoleInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFRolePrivilege_REFERENCE_WFRoleInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFUSERROLE_REFERENCE_94_WFROLEINFO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSapAmountCategoryCommodity_REFERENCE_WFSapConfiguration" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSapTransactionMultiObject_REFERENCE_WFSapTransaction" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFSettlementRequest_WFSettlementRequestDetail_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSettleOptionDetail_REFERENCE_WFSettleOption" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_SodEp_REFERENCE_Sod" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_SodPf_REFERENCE_Sod" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_SodEpCr_REFERENCE_SodEp" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_SodEpDa_REFERENCE_SodEp" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_SodEpDp_REFERENCE_SodEp" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_SodEpLc_REFERENCE_SodEp" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSodEpAmountFirst_REFERENCE_WFSettleOptionDetailExchangeProcess" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_SodPfBill_REFERENCE_SodPf" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSPECIALFEECONFIGURATION_REFERENCE_112_WFSYSTEMFEECONFIGURATION" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSPOTRECEIPTCONVERTDETAILIN_REFERENCE_101_WFSPOTRECEIPTCONVERTINFO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSPOTRECEIPTCONVERTDETAILIN_REFERENCE_102_WFWAREHOUSESTORAGE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSTORAGEASSISTANTMEASUREINF_REFERENCE_206_WFWAREHOUSESTORAGE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFStorageConversionDetail_REFERENCE_WFStorageConversion" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSubscribeConfigDetail_REFERENCE_WFSubscribeConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSupplementalAgreementDetail_REFERENCE_WFSupplementalAgreement" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSYSTEM_REFERENCE_WFSYSTEM" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFSystemConfiguration_WFSystemConfigDetail_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSYSTEMFEE_REFERENCE_116_WFSYSTEMFINANCEACCOUNT" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFSystemFeeConfiguration_REFERENCE_WFWAREHO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFTradeInstructionDetail_REFERENCE_WFTradeInstruction" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFTradeInstructionRelation_REFERENCE_WFTradeInstruction" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFTradePricingMatchDetail_REFERENCE_WFTradePricingMatchRecord" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFUSERBU_REFERENCE_WFUSER" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFUSERCORPORATION_REFERENCE_173_WFUSER" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFUSERMESSAGE_REFERENCE_119_WFUSER" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFUSERREQUEST_REFERENCE_125_WFUSER" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFUSERROLE_REFERENCE_93_WFUSER" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFUSERTASK_REFERENCE_120_WFUSER" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFUserTask_REFERENCE_WFUser" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWarehouseCalculateFeeType_REFERENCE_WFWAREHO" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWAREHO_REFERENCE_WFWarehouseCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWarehouseDetail_REFERENCE_WFWarehouseCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFWarehouseEntryOrder_WFWarehouseEntryRecord_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_Storage_REFERENCE_EntryDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWAREHOUSEOUTORDER_REFERENCE_73_WFWAREHOUSEOUTRECORD" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWAREHOUSEOUTRECORDDETAIL_REFERENCE_69_WFWAREHOUSEOUTRECORD" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_OutDetail_REFERENCE_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWhStorageFlowTrack_REFERENCE_WFWarehouseOutRecordDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWAREHOUSESTORAGEITEM_REFERENCE_65_WFWAREHOUSESTORAGE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWHSTORAGEFLOWTRACK_REFERENCE_100_WFWAREHOUSESTORAGE" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.WFWarehouseStorage_WFWhStorageFlowTrack_FK1" ManuallyRouted="false" />
+        <AssociationConnector Association="OperationSystem_HBMSModel.FK_WFWarehousingDetail_REFERENCE_WFWarehousing" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
