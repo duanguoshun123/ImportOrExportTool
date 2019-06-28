@@ -893,7 +893,7 @@ namespace Tool.BL.BussinessLayer.Tool.BL.BussinessLayer.Manager
                             {
                                 CreationTime = DateTime.Now,
                                 LastManipulationTime = DateTime.Now,
-                                IsBuiltIn = true,
+                                IsBuiltIn = false,
                                 QctKey = x.WFCommodityCategoryName,
                                 Name = x.WFCommodityCategoryName,
                             });
