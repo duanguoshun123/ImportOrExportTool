@@ -25,10 +25,11 @@ namespace Tool.ExportImport.ExportImportHelper
             else if (filePath.IndexOf(".xls") > 0) // 2003版本
                 workbook = new HSSFWorkbook(fs);
         }
-        public List<Tuple<DataTable, ImportType>> ExcelToDataTable(ImportType importType)
+        public List<Tuple<DataTable, ImportType, int>> ExcelToDataTable(ImportType importType)
         {
             ISheet sheet = null;
-            var result = new List<Tuple<DataTable, ImportType>>();
+            var result = new List<Tuple<DataTable, ImportType, int>>();
+            var level = 0;
             try
             {
                 switch (importType)
@@ -56,12 +57,20 @@ namespace Tool.ExportImport.ExportImportHelper
                     //case ImportType.Exchange:
                     //    sheet = workbook.GetSheet("交易所");
                     //    break;
+                    case ImportType.SPRolePermission:
+                        sheet = workbook.GetSheet("权限");
+                        break;
                     default:
                         break;
                 }
                 // 只导入单个sheet
                 if (sheet != null)
                 {
+                    if (workbook.IsSheetHidden(workbook.GetSheetIndex(sheet.SheetName)))
+                    {
+                        result.Add(new Tuple<DataTable, ImportType, int>(new DataTable(), importType, level));
+                        return result;
+                    }
                     int startRow = 0;
                     DataTable table = new DataTable();
                     IRow firstRow = sheet.GetRow(0);
@@ -127,7 +136,7 @@ namespace Tool.ExportImport.ExportImportHelper
                         }
                         table.Rows.Add(dataRow);
                     }
-                    result.Add(new Tuple<DataTable, ImportType>(table, importType));
+                    result.Add(new Tuple<DataTable, ImportType, int>(table, importType, level));
                 }
                 else //查 所有
                 {
@@ -138,7 +147,8 @@ namespace Tool.ExportImport.ExportImportHelper
                     for (int k = 0; k < workbook.NumberOfSheets; k++)
                     {
                         sheet = workbook.GetSheetAt(k);
-                        if (!ConstValue.ImportValues.Contains(sheet.SheetName))
+                        // 移除非需要的sheet 跟隐藏的sheet
+                        if (!ConstValue.ImportValues.Contains(sheet.SheetName) || workbook.IsSheetHidden(k))
                         {
                             continue;
                         }
@@ -210,22 +220,28 @@ namespace Tool.ExportImport.ExportImportHelper
                         switch (sheet.SheetName)
                         {
                             case "法人":
-                                result.Add(Tuple.Create(table, ImportType.Corportation));
+                                level = 1;
+                                result.Add(Tuple.Create(table, ImportType.Corportation, level));
                                 break;
                             case "利润中心":
-                                result.Add(Tuple.Create(table, ImportType.ProfitCenter));
+                                level = 2;
+                                result.Add(Tuple.Create(table, ImportType.ProfitCenter, level));
                                 break;
                             case "岗位":
-                                result.Add(Tuple.Create(table, ImportType.Post));
+                                level = 5;
+                                result.Add(Tuple.Create(table, ImportType.Post, level));
                                 break;
                             case "权限":
-                                result.Add(Tuple.Create(table, ImportType.Permission));
+                                level = 6;
+                                result.Add(Tuple.Create(table, ImportType.Permission, level));
                                 break;
                             case "用户":
-                                result.Add(Tuple.Create(table, ImportType.UserInfo));
+                                level = 3;
+                                result.Add(Tuple.Create(table, ImportType.UserInfo, level));
                                 break;
                             case "品种":
-                                result.Add(Tuple.Create(table, ImportType.Commodity));
+                                level = 4;
+                                result.Add(Tuple.Create(table, ImportType.Commodity, level));
                                 break;
                             //case "交易所":
                             //    result.Add(Tuple.Create(table, ImportType.Exchange));

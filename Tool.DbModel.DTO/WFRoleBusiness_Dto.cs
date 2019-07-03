@@ -19,7 +19,7 @@ namespace Tool.DbModel.DTO
         public Nullable<int> Module { get; set; }
         public string Note { get; set; }
 
-        public virtual WFBusiness_Dto WFBusiness { get; set; } 
+        //public virtual WFBusiness_Dto WFBusiness { get; set; } 
         public string DepartmentName { get; set; }
         public string AccoutingName { get; set; }
     }

@@ -24,8 +24,8 @@ namespace Tool.DbModel.DTO
         public Nullable<int> Module { get; set; }
 
         public virtual WFPost_Dto WFPost { get; set; }
-        public virtual ICollection<WFRolePrivilege_Dto> WFRolePrivileges { get; set; }
-        public virtual ICollection<WFRoleBusiness_Dto> WFRoleBusinesses { get; set; }
+        //public virtual ICollection<WFRolePrivilege_Dto> WFRolePrivileges { get; set; }
+        //public virtual ICollection<WFRoleBusiness_Dto> WFRoleBusinesses { get; set; }
         /// <summary>
         /// 岗位可操作利润中心[本法人]
         /// </summary>
@@ -45,10 +45,14 @@ namespace Tool.DbModel.DTO
         /// <summary>
         /// 冗余-岗位分类名称
         /// </summary>
-        public string PostName { get; set; }
+        public List<string> PostNames { get; set; }
         /// <summary>
         /// 岗位其他可见利润中心
         /// </summary>
         public List<string> OtherAccountEntitiesNames { get; set; }
+        /// <summary>
+        /// 岗位其他可见利润中心
+        /// </summary>
+        public string OtherCorporationName { get; set; }
     }
 }

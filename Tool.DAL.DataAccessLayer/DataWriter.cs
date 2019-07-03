@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntityFramework.BulkInsert.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -21,7 +22,7 @@ namespace Tool.DAL.DataAccessLayer
                 {
                     for (int i = 0; i < objList.Count; ++i)
                     {
-                        context.Entry<T>(objList[i]).State = EntityState.Added;
+                        context.Entry<T>(objList[i]).State = System.Data.Entity.EntityState.Added;
                     }
                     context.SaveChanges();
                 }
@@ -54,7 +55,7 @@ namespace Tool.DAL.DataAccessLayer
                 {
                     for (int i = 0; i < objList.Count; ++i)
                     {
-                        context.Entry<T>(objList[i]).State = EntityState.Modified;
+                        context.Entry<T>(objList[i]).State = System.Data.Entity.EntityState.Modified;
                     }
                     context.SaveChanges();
                 }
@@ -74,7 +75,7 @@ namespace Tool.DAL.DataAccessLayer
                 {
                     for (int i = 0; i < objList.Count; ++i)
                     {
-                        context.Entry<T>(objList[i]).State = EntityState.Deleted;
+                        context.Entry<T>(objList[i]).State = System.Data.Entity.EntityState.Deleted;
                     }
                     context.SaveChanges();
                 }
@@ -135,7 +136,7 @@ namespace Tool.DAL.DataAccessLayer
                         }
                         else
                         {
-                            context.Entry<T>(objList[i]).State = EntityState.Modified;
+                            context.Entry<T>(objList[i]).State = System.Data.Entity.EntityState.Modified;
                         }
                     }
                     context.SaveChanges();
@@ -167,7 +168,7 @@ namespace Tool.DAL.DataAccessLayer
                     }
                     else
                     {
-                        context.Entry<T>(obj).State = EntityState.Modified;
+                        context.Entry<T>(obj).State = System.Data.Entity.EntityState.Modified;
                     }
                     context.SaveChanges();
                 }
@@ -187,7 +188,7 @@ namespace Tool.DAL.DataAccessLayer
                     if (!context.Database.Exists())
                         context.Database.Create();
                     context.BulkInsert<T>(objList);
-                    context.BulkSaveChanges();
+                    context.SaveChanges();
                 }
             }
             catch (Exception ex)
@@ -195,5 +196,6 @@ namespace Tool.DAL.DataAccessLayer
                 throw ex;
             }
         }
+
     }
 }

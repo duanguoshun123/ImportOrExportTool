@@ -10,6 +10,6 @@ namespace Tool.BL.BussinessLayer.Tool.BL.BussinessLayer.Interface
 {
     public interface IImportManager
     {
-        Tuple<bool, string, MsgType> Import(List<Tuple<DataTable, ImportType>> datas);
+        Tuple<bool, string, MsgType> Import(Tuple<DataTable, ImportType,int> datas);
     }
 }

@@ -17,7 +17,6 @@ namespace ExportImportTool
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ExportImportTool());
-            log4net.Config.XmlConfigurator.Configure();
         }
     }
 }

@@ -27,6 +27,6 @@ namespace Tool.DbModel.DTO
         /// <summary>
         ///冗余- 权限名称
         /// </summary>
-        public string PermissionName { get; set; }
+        public string PermissionName { get; set; } 
     }
 }

@@ -80,15 +80,129 @@ namespace ExportImportTool
                 ShowInfo("开始导入指定文件", MsgType.Default, LogInfoText);
                 NPOI_ImportHelper nPOI_ImportHelper = new NPOI_ImportHelper(this.FileSourceText.Text);
                 var result = nPOI_ImportHelper.ExcelToDataTable((ImportType)this.cmb_ImportDataType.SelectedValue);
-                var isSuccess = importManager.Import(result);
-                if (isSuccess.Item1)
-                {
-                    ShowInfo($"导入成功【{isSuccess.Item2}】", isSuccess.Item3, LogInfoText);
-                }
-                else
-                {
-                    ShowInfo($"导入失败【{isSuccess.Item2}】", MsgType.Err, LogInfoText);
-                }
+                StringBuilder msg = new StringBuilder();
+                result.OrderBy(x => x.Item3)?.ToList()?.ForEach(x =>
+                  {
+                      switch (x.Item2)
+                      {
+                          case ImportType.All:
+                              break;
+                          case ImportType.Corportation:
+                              msg = new StringBuilder();
+                              msg.AppendLine("【开始导入法人主数据】");
+                              var isSuccessForCorpo = importManager.Import(x);
+                              msg.AppendLine("【导入法人主数据结束】");
+                              if (isSuccessForCorpo.Item1)
+                              {
+                                  msg = msg.AppendLine("法人主数据导入成功").AppendLine(isSuccessForCorpo.Item2);
+                                  ShowInfo(msg.ToString(), isSuccessForCorpo.Item3, LogInfoText);
+                              }
+                              else
+                              {
+                                  msg = msg.AppendLine("法人主数据导入失败").AppendLine(isSuccessForCorpo.Item2);
+                                  ShowInfo(msg.ToString(), MsgType.Err, LogInfoText);
+                              }
+                              break;
+                          case ImportType.ProfitCenter:
+                              msg = new StringBuilder();
+                              msg.AppendLine("【开始导入利润中心主数据】");
+                              var isSuccessForProfitCenter = importManager.Import(x);
+                              msg.AppendLine("【导入利润中心主数据结束】");
+                              if (isSuccessForProfitCenter.Item1)
+                              {
+                                  msg = msg.AppendLine("利润中心主数据导入成功").AppendLine(isSuccessForProfitCenter.Item2);
+                                  ShowInfo(msg.ToString(), isSuccessForProfitCenter.Item3, LogInfoText);
+                              }
+                              else
+                              {
+                                  msg = msg.AppendLine("利润中心主数据导入失败").AppendLine(isSuccessForProfitCenter.Item2);
+                                  ShowInfo(msg.ToString(), MsgType.Err, LogInfoText);
+                              }
+                              break;
+                          case ImportType.Post:
+                              msg = new StringBuilder();
+                              msg.AppendLine("【开始导入岗位主数据】");
+                              var isSuccessForPost = importManager.Import(x);
+                              msg.AppendLine("【导入岗位主数据结束】");
+                              if (isSuccessForPost.Item1)
+                              {
+                                  msg = msg.AppendLine("岗位主数据导入成功").AppendLine(isSuccessForPost.Item2);
+                                  ShowInfo(msg.ToString(), isSuccessForPost.Item3, LogInfoText);
+                              }
+                              else
+                              {
+                                  msg = msg.AppendLine("岗位主数据导入失败").AppendLine(isSuccessForPost.Item2);
+                                  ShowInfo(msg.ToString(), MsgType.Err, LogInfoText);
+                              }
+                              break;
+                          case ImportType.Permission:
+                              msg = new StringBuilder();
+                              msg.AppendLine("【开始导入权限主数据】");
+                              var isSuccessForPermission = importManager.Import(x);
+                              msg.AppendLine("【导入权限主数据结束】");
+                              if (isSuccessForPermission.Item1)
+                              {
+                                  msg = msg.AppendLine("权限主数据导入成功").AppendLine(isSuccessForPermission.Item2);
+                                  ShowInfo(msg.ToString(), isSuccessForPermission.Item3, LogInfoText);
+                              }
+                              else
+                              {
+                                  msg = msg.AppendLine("权限主数据导入失败").AppendLine(isSuccessForPermission.Item2);
+                                  ShowInfo(msg.ToString(), MsgType.Err, LogInfoText);
+                              }
+                              break;
+                          case ImportType.UserInfo:
+                              msg = new StringBuilder();
+                              msg.AppendLine("【开始导入用户主数据】");
+                              var isSuccessForUserInfo = importManager.Import(x);
+                              msg.AppendLine("【导入用户主数据结束】");
+                              if (isSuccessForUserInfo.Item1)
+                              {
+                                  msg = msg.AppendLine("用户主数据导入成功").AppendLine(isSuccessForUserInfo.Item2);
+                                  ShowInfo(msg.ToString(), isSuccessForUserInfo.Item3, LogInfoText);
+                              }
+                              else
+                              {
+                                  msg = msg.AppendLine("用户主数据导入失败").AppendLine(isSuccessForUserInfo.Item2);
+                                  ShowInfo(msg.ToString(), MsgType.Err, LogInfoText);
+                              }
+                              break;
+                          case ImportType.Commodity:
+                              msg = new StringBuilder();
+                              msg.AppendLine("【开始导入品种主数据】");
+                              var isSuccessForCommodity = importManager.Import(x);
+                              msg.AppendLine("【导入品种主数据结束】");
+                              if (isSuccessForCommodity.Item1)
+                              {
+                                  msg = msg.AppendLine("品种主数据导入成功").AppendLine(isSuccessForCommodity.Item2);
+                                  ShowInfo(msg.ToString(), isSuccessForCommodity.Item3, LogInfoText);
+                              }
+                              else
+                              {
+                                  msg = msg.AppendLine("品种主数据导入失败").AppendLine(isSuccessForCommodity.Item2);
+                                  ShowInfo(msg.ToString(), MsgType.Err, LogInfoText);
+                              }
+                              break;
+                          case ImportType.SPRolePermission:
+                              msg = new StringBuilder();
+                              msg.AppendLine("【开始导入标准岗位角色权限主数据】");
+                              var isSuccessForSPRolePermission = importManager.Import(x);
+                              msg.AppendLine("【导入标准岗位角色权限主数据结束】");
+                              if (isSuccessForSPRolePermission.Item1)
+                              {
+                                  msg = msg.AppendLine("标准岗位角色权限主数据导入成功").AppendLine(isSuccessForSPRolePermission.Item2);
+                                  ShowInfo(msg.ToString(), isSuccessForSPRolePermission.Item3, LogInfoText);
+                              }
+                              else
+                              {
+                                  msg = msg.AppendLine("标准岗位角色权限主数据导入失败").AppendLine(isSuccessForSPRolePermission.Item2);
+                                  ShowInfo(msg.ToString(), MsgType.Err, LogInfoText);
+                              }
+                              break;
+                          default:
+                              break;
+                      }
+                  });
             }
             catch (Exception ex)
             {

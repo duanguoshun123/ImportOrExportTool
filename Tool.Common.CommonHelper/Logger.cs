@@ -8,45 +8,31 @@ using System.Threading.Tasks;
 
 namespace Tool.Common.CommonHelper
 {
-    public class Logger
+    public static class Logger
     {
         private static log4net.ILog Log { get; set; }
 
         private static StackTrace Trace { get; set; }
-        #region Critical
 
-        public static void Critical(object message, Exception ex)
+        #region Debug
+
+        public static void Debug(object message)
         {
             Trace = new StackTrace();
             Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.Fatal(message, ex);
+            Log.Debug(message);
         }
 
-        public static void Critical(object message)
+        public static void Debug(string format, params object[] args)
         {
             Trace = new StackTrace();
             Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.Fatal(message);
+            Log.DebugFormat(format, args);
         }
 
-        public static void CriticalFormat(string format, params object[] args)
-        {
-            Trace = new StackTrace();
-            Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.FatalFormat(format, args);
-        }
-
-        #endregion Critical
+        #endregion
 
         #region Error
-
-        public static void Error(object message, Exception ex)
-        {
-            Trace = new StackTrace();
-            Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.Error(message, ex);
-        }
-
         public static void Error(object message)
         {
             Trace = new StackTrace();
@@ -54,49 +40,15 @@ namespace Tool.Common.CommonHelper
             Log.Error(message);
         }
 
-        public static void ErrorFormat(string format, params object[] args)
+        public static void Error(string format, params object[] args)
         {
             Trace = new StackTrace();
             Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
             Log.ErrorFormat(format, args);
         }
-
-        #endregion Error
-
-        #region Warn
-
-        public static void Warn(object message, Exception ex)
-        {
-            Trace = new StackTrace();
-            Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.Warn(message, ex);
-        }
-
-        public static void Warn(object message)
-        {
-            Trace = new StackTrace();
-            Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.Warn(message);
-        }
-
-        public static void WarnFormat(string format, params object[] args)
-        {
-            Trace = new StackTrace();
-            Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.WarnFormat(format, args);
-        }
-
-        #endregion Warn
+        #endregion
 
         #region Info
-
-        public static void Info(Exception ex, object message)
-        {
-            Trace = new StackTrace();
-            Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.Info(message, ex);
-        }
-
         public static void Info(object message)
         {
             Trace = new StackTrace();
@@ -110,33 +62,23 @@ namespace Tool.Common.CommonHelper
             Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
             Log.InfoFormat(format, args);
         }
+        #endregion
 
-        #endregion Info
-
-        #region Debug
-
-        public static void Debug(object message, Exception ex)
+        #region Warn
+        public static void Warn(object message)
         {
             Trace = new StackTrace();
             Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.Debug(message, ex);
+            Log.Warn(message);
         }
 
-        public static void Debug(object message)
+        public static void Warn(string format, params object[] args)
         {
             Trace = new StackTrace();
             Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.Debug(message);
+            Log.WarnFormat(format, args);
         }
-
-        public static void DebugFormat(string format, params object[] args)
-        {
-            Trace = new StackTrace();
-            Log = log4net.LogManager.GetLogger(string.Format("{0}.{1}", Trace.GetFrame(1).GetMethod().ReflectedType, Trace.GetFrame(1).GetMethod().Name));
-            Log.DebugFormat(format, args);
-        }
-
-        #endregion Debug
+        #endregion
 
         //清理日志文件
         public static void CleanLogs(int days)
@@ -155,7 +97,7 @@ namespace Tool.Common.CommonHelper
             }
             catch (Exception ex)
             {
-                Logger.Info("清理日志报错", ex.ToString());
+                Logger.Info("清理日志文件时发生错误:{0}", ex.ToString());
             }
         }
     }

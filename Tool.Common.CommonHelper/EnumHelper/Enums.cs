@@ -26,6 +26,8 @@ namespace Tool.Common.CommonHelper.EnumHelper
             Commodity = 6,
             //[Note("交易所")]
             //Exchange = 7,
+            [Note("标准岗位角色权限")]
+            SPRolePermission = 8,
         }
         public enum MsgType
         {

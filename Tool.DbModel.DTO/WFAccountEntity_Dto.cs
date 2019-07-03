@@ -32,7 +32,7 @@ namespace Tool.DbModel.DTO
         /// <summary>
         /// partial
         /// </summary>
-        public ICollection<WFBusiness_Dto> WFBusinesses { get; set; } = new HashSet<WFBusiness_Dto>();
+        //public ICollection<WFBusiness_Dto> WFBusinesses { get; set; } = new HashSet<WFBusiness_Dto>();
 
         /// <summary>
         /// 核算主体关联的部门
